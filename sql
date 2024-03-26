@@ -1,0 +1,1 @@
+SELECT cast(time_from as time)as fromtime,cast(time_to as time)as totime, classname, status FROM `events` WHERE date(time_from) = CURRENT_DATE() AND instituteID='$instID' AND username='$res_Uname' AND status!='cancelled' ORDER BY fromtime;
